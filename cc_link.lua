@@ -16,7 +16,7 @@ function main(splash, args)
     print('waiting...')
   end
   
-  text = splash:select('article#js-sticky-cta a.sticky-cta__link'):getAttribute('href')
+  text = splash:select('#js-sticky-cta a.sticky-cta__link'):getAttribute('href')
   print(text)
   return {text}
   
